@@ -32,8 +32,11 @@ light = Světlý
 settings-camera = Kamera
 settings-video = Video
 settings-device = Zařízení
+settings-backend = Backend
 settings-format = Formát
 settings-microphone = Mikrofon
+settings-record-audio = Nahrávání zvuku
+settings-audio-encoder = Enkodér zvuku
 settings-encoder = Enkodér
 settings-quality = Kvalita
 settings-video-encoder = Enkodér videa
@@ -41,7 +44,9 @@ settings-video-quality = Kvalita videa
 settings-manual-override = Manuální přepsání režimu
 settings-mirror-preview = Zrcadlit náhled
 settings-mirror-preview-description = Převrátí náhled kamery vodorovně
+settings-reset-all = Obnovit všechna nastavení
 settings-bug-reports = Hlášení chyb
+settings-stats-for-nerds = Statistiky pro experty
 settings-report-bug = Nahlásit chybu
 settings-show-report = Zobrazit hlášení
 settings-resolution = Rozlišení
@@ -53,6 +58,15 @@ device-info-card = Karta
 device-info-driver = Ovladač
 device-info-path = Cesta
 device-info-real-path = Pravá cesta
+device-info-device-path = Cesta k zařízení
+device-info-sensor = Senzor
+device-info-pipeline = Pipeline
+device-info-libcamera-version = libcamera
+device-info-multistream = Více streamů
+device-info-multistream-yes = Podporováno
+device-info-multistream-no = Nepodporováno
+device-info-rotation = Rotace
+device-info-none = Nejsou dostupné žádné informace o zařízení
 
 # Bitrate presets
 preset-low = Nízký
@@ -100,6 +114,10 @@ exposure-backlight = Protisvětlo
 exposure-manual-mode = Manuální
 exposure-auto-mode = Automatická
 exposure-not-supported = nepodporováno
+
+# Focus controls
+focus-auto = Ostření
+focus-position = Ostření
 
 # Color controls
 color-title = Barvy
@@ -155,3 +173,84 @@ settings-save-burst-raw-description = Uloží jednotlivé snímky sekvence jako 
 
 # About page
 about-support = Podpora a zpětná vazba
+
+# Insights
+insights-title = Přehled
+insights-pipeline = Pipeline
+insights-pipeline-full = GStreamer pipeline
+insights-pipeline-full-libcamera = Pipeline
+insights-decoder-chain = Řetězec záložních dekodérů
+
+insights-stream-combined = Náhled + záznam
+
+insights-frame-latency = Latence snímku
+insights-dropped-frames = Zahozené snímky
+insights-frame-size-decoded = Velikost snímku
+insights-decode-time-gst = Zpracování bufferu
+insights-copy-time = Čas zabalení snímku
+insights-gpu-upload-time = Čas nahrání do GPU
+insights-gpu-upload-bandwidth = Propustnost nahrávání do GPU
+
+insights-format-source = Zdroj
+insights-format-resolution = Rozlišení
+insights-format-framerate = Snímková frekvence
+insights-format-native = Nativní formát
+insights-format-gstreamer = Výstup GStreamer
+insights-cpu-processing = Zpracování CPU
+insights-cpu-decode-time = Čas dekódování (CPU)
+insights-format-wgpu = Zpracování GPU
+
+insights-selected = Vybráno
+insights-available = Dostupné
+insights-unavailable = Nedostupné
+
+# Insights - Backend
+insights-backend = Backend
+insights-backend-type = Typ
+insights-pipeline-handler = Obsluha pipeline
+insights-libcamera-version = Verze libcamera
+insights-sensor-model = Senzor
+insights-mjpeg-decoder = MJPEG dekodér
+
+# Insights - Multi-stream
+insights-multistream-single = Jeden stream
+insights-multistream-dual = Dva streamy
+insights-multistream-source-shared = Náhled a záznam
+insights-multistream-source-separate = Náhled / záznam
+insights-stream-preview = Stream náhledu
+insights-stream-capture = Stream záznamu
+insights-stream-role = Role
+insights-stream-resolution = Rozlišení
+insights-stream-pixel-format = Formát pixelů
+insights-stream-frame-count = Snímky
+
+# Insights - Audio
+insights-audio = Zvuk
+insights-audio-recording = Nahrávání
+insights-audio-device = Zařízení
+insights-audio-node = Uzel
+insights-audio-codec = Kodek
+insights-audio-channels = Kanály
+insights-audio-enabled = Povoleno
+insights-audio-disabled = Zakázáno
+insights-audio-default = (Výchozí)
+insights-audio-mono = Mono
+insights-audio-pipeline = Pipeline
+insights-audio-format = Formát
+insights-audio-inputs = Vstupní kanály
+insights-audio-output-level = Úroveň výstupu
+insights-audio-not-recording = Nenahrává se
+
+# Insights - Per-frame metadata
+insights-metadata = Metadata snímku
+insights-meta-exposure = Expozice
+insights-meta-analogue-gain = Analogové zesílení
+insights-meta-digital-gain = Digitální zesílení
+insights-meta-colour-temp = Teplota barev
+insights-meta-sequence = Sekvence
+insights-meta-colour-gains = Zesílení WB (R, B)
+insights-meta-black-level = Úroveň černé
+insights-meta-lens-position = Pozice objektivu
+insights-meta-lux = Osvětlení
+insights-meta-focus-fom = FoM ostření
+insights-meta-na = N/A
